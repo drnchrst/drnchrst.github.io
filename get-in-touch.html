@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Get in touch with Dareen Christabel.">
+  <meta property="og:title" content="Contact Dareen Christabel">
+  <title>Get in touch — Dareen Christabel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Oooh+Baby&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="contact.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Dareen Christabel, home">
+      <span>Dareen Christabel</span>
+      <span class="wordmark-note">UX research · customer experience strategy</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="projects.html">Selected work</a>
+      <a href="about-me.html">About me</a>
+      <a class="nav-contact" href="get-in-touch.html" aria-current="page">Get in touch</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="contact-page section-wrap" aria-labelledby="contact-page-title">
+      <div class="contact-intro">
+        <h1 id="contact-page-title">Get in <em>touch.</em></h1>
+        <p>Whether you have an opportunity in mind, would like to know more about my work, or would like a copy of my resume, feel free to send me a message.</p>
+        <p>Looking forward to hearing from you!</p>
+        <p class="contact-signoff">- Dareen</p>
+        <p class="contact-social">Find me on <a href="https://www.linkedin.com/in/dareen-christabel/">LinkedIn</a></p>
+      </div>
+
+      <div class="contact-form-panel">
+        <h2>Send a message</h2>
+        <p class="contact-required">Fields marked with an asterisk (*) are required.</p>
+        <form id="contact-form" action="https://formspree.io/f/xrppyqnl" method="post">
+          <label>Name *<input name="name" required autocomplete="name"></label>
+          <label>Email *<input type="email" name="email" required autocomplete="email"></label>
+          <label>Subject<input name="subject"></label>
+          <label>Message *<textarea name="message" rows="6" required></textarea></label>
+          <button class="button button-primary contact-submit" type="submit">Submit</button>
+          <p class="contact-form-message" id="contact-success" role="status" hidden>Thank you! Your submission has been received!</p>
+          <p class="contact-form-message contact-form-error" id="contact-error" role="alert" hidden>Oops! Something went wrong while submitting the form.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© Dareen Christabel</p>
+    <a href="#main">Back to top</a>
+  </footer>
+</body>
+</html>
