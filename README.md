@@ -13,7 +13,3 @@ python3 -m http.server 8000
 ```
 
 Then open <http://localhost:8000>.
-
-## Localize hosted images
-
-`localize_assets.py` downloads images referenced from Webflow's CDN and updates the HTML to use the local files. Run it with `python3 localize_assets.py`; it requires an internet connection. Review the resulting changes before committing.
